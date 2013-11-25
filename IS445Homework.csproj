@@ -142,15 +142,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\FormatPhoneNumber.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Task2.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\ReWord.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Home\WebForm.cshtml" />
   </ItemGroup>
   <ItemGroup>

@@ -28,11 +28,6 @@ namespace IS445.Controllers
         }
 
 
-        public ActionResult Task2()
-        {
-            return View();
-        }
-
         public ActionResult ReWord(string inputwords)
         {
 
