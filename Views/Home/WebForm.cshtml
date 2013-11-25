@@ -1,0 +1,63 @@
+﻿@model string
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+
+<body>
+
+    <p>
+        <h1>Welcome to my Web Form</br></h1>
+        <h2> demo form for hotel room reservation
+        </br></h2>
+
+    </p>
+    <form method="post" action="Form.html">
+    <p>
+
+    <fieldset>
+        <legend>Customer Information</legend>
+            <p>
+                <label>Full name: <input type="text" id="full name" name="full name" required placeholder="Firstname Lastname"></label></br>
+                <label>Email Address: <input type="email" id="email" name="email" required ></label></br>
+                <label>Phone: <input type="tel" id="tel" name="tel" required ></label></br>
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>RoomInformation</legend>
+            <p>
+                <label>Arrival date: <input type="date" id="datearri" name="datearri"></label></br>
+                <label>Arrival time: <input type="time" name="timearri" id="timearri"></label></br>
+                <label>Select a room type:
+                    <select>
+                        <option value="L" selected >Luxury</option>
+                        <option value="S">Standard</option>
+                        <option value="E">Economic</option>
+                    </select>
+                </label></br>
+                <label>Number of nights <input type="number" max="30" min="1" value ="1" id="nights" name="nights"></label></br>
+                <label>Number of guests <input type="number" max="3" min="1" value ="0" id="guests" name="guest"></label>
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Information</legend>
+            <p>
+                <label>Promo Code: <input type="text" maxlength ="4" id="promo" name="promo"></label></br>
+                <label>Special Note: <textarea name="Note" id="note" cols="40" rows="5" placeholder="Enter your special notes here"></textarea></label>
+
+            </p>
+    </fieldset>
+        <p><input type="reset" value="Clear Form" />
+           <input type="submit" value="Request Reservation">
+
+            </form>
+</body>
+</html>
+    

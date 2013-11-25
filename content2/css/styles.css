@@ -1,0 +1,80 @@
+﻿
+body
+{
+    text-align: center;
+    width:600px;
+    margin-left :auto;
+    margin-right:auto;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+nav a
+{
+    margin: 2em 2em 2em 2em;
+        
+}
+
+
+span
+{
+    width: 20px;
+    margin-right :20px;
+}
+
+form
+{
+    border:solid ;
+    border-color: green;
+    padding :10px 10px 10px 10px;
+    text-align :left ;
+
+}
+
+
+h2 
+{
+    color: purple;
+    text-emphasis-color :purple ;
+}
+
+h1
+{
+    color: blue;
+}
+
+
+footer
+{
+    font-size: 12px;
+}
+
+
+img
+{
+    float: right;
+}
+
+
+hr.topbar
+{
+    color : #00FF00 ;
+    background-color :#00FF00;
+    height:8px;
+}
+
+hr.footbar
+{
+    border-top: double;
+    padding-top: 5px;
+}

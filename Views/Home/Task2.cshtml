@@ -1,0 +1,14 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Task2";
+}
+
+<h2>Task2</h2>
+@using (Html.BeginForm("ReWord", "Home"))
+{
+  <label for="inputWords">Please input a sentence: </label>
+  <input type="text" name="inputWords" id="inputWords" value=""/>
+  <input type="submit" name="submit" value="submit" />
+}
+

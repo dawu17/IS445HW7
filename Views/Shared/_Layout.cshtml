@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Homepage for Chihwei Wu</title>
+<link href="~/content2/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+    <header> <p align="center"><strong> Wu, chihwei Homework 7 </strong></p>
+             <hr class="topbar" />
+        <nav>
+            <span>@Html.ActionLink("Home", "Index")</span>
+            <span>@Html.ActionLink("Web Form Demo", "WebForm")</span>
+            <span>@Html.ActionLink("About Me", "Aboutme")</span>
+
+
+
+
+        </nav>
+
+
+
+    </header>
+
+        <div>
+        @RenderBody()
+         </div>
+
+    <footer>
+        <span><em>Daniel Wu © Contact Information</span>
+            <span><a href="mailto:bluedaniel86@gmail.com"> Email: bluedaniel86@gmail.com </a></span> 
+            <span>Phone: 310-430-4630</span></br></em>
+
+    </footer>
+        </div>
+
+</body>
+
+</html>
