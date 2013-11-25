@@ -28,44 +28,5 @@ namespace IS445.Controllers
         }
 
 
-        public ActionResult ReWord(string inputwords)
-        {
-
-            String Newword = string.Join(" ", inputwords.Split(' ').Reverse());
-            //string[] Newwords = inputwords.Split(' ');
-            //Array.Reverse(Newwords);
-
-            return View((object)Newword);
-        }
-
-
-
-
-        public ActionResult FormatPhoneNumber(string inputNumber)
-        {
-
-          if (string.IsNullOrEmpty(inputNumber))
-          {
-            return Content("invalid input, please try again");
-          }
-          else
-          {
-            //string formatted = string.Format("{0: (###) ###-####}", inputNumber);
-            string formatted = formatNumber(inputNumber);
-            return View((object)formatted);
-          }
-        }
-
-        // please implement your phone number formatting logic here
-        private string formatNumber(string inputNumber)
-        {
-          string newformat = string.Format("{0: (###) ###-####}", Convert.ToInt64(inputNumber)); 
-            // imiplement formatting here
-          return newformat;
-        }
-
-
-
-
     }
 }
